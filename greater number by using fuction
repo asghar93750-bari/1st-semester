@@ -1,0 +1,21 @@
+//find greater number from 3 number that you take from the user.
+
+#include <iostream>
+using namespace std;
+
+int grtnum(int a,int b,int c){
+    if( a>b && a>c){
+        return a;
+    }else if( b>a && b>c){
+        return b;
+    }else{
+        return c;
+    }
+}
+//main function for calling the prevoius function of greater number .
+int main(){
+    int num1{},num2{},num3{};
+    cout<<"Enter three (3) number for  finding greater one: ";
+    cin>>num1>>num2>>num3;
+    return grtnum(num1,num2,num3);
+}
